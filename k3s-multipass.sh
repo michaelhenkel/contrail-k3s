@@ -1,3 +1,4 @@
+#!/bin/bash
 multipass launch --name k3s1 --mem 6G --disk 15G --cpus 4
 multipass exec k3s1 -- sudo rm /etc/resolv.conf
 echo nameserver 8.8.8.8 > /tmp/resolv.conf
