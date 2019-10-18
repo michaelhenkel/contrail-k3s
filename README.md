@@ -1,6 +1,6 @@
 # Install multiplass k3s
 ```
-curl -sfL https://raw.githubusercontent.com/michaelhenkel/contrail-k3s/master/k3s-multipass.sh | sh -
+bash <(curl -sfL https://raw.githubusercontent.com/michaelhenkel/contrail-k3s/master/k3s-multipass.sh)
 ```
 # Install Operator
 ```
