@@ -104,7 +104,7 @@ spec:
           podSubnet: 10.32.0.0/12
           serviceSubnet: 10.96.0.0/12
           kubernetesClusterName: kubernetes
-          ipFabricForwarding: true
+          ipFabricForwarding: false
           ipFabricSnat: true
           kubernetesTokenFile: /var/run/secrets/kubernetes.io/serviceaccount/token
     controls:
