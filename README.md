@@ -78,3 +78,8 @@ echo "https://$(multipass info k3s1 |grep IPv4 |awk '{print $2}'):8143"
 https://192.168.64.73:8143
 ```
 Copy the URL into your browser, username is admin, password is contrail123
+
+# Adding an k3s agent
+```
+AGENT_NAME=k3s2 bash <(curl -sfL https://raw.githubusercontent.com/michaelhenkel/contrail-k3s/master/k3s-multipass-agent.sh)
+```

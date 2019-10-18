@@ -175,16 +175,18 @@ spec:
           contrail_cluster: cluster1
       spec:
         commonConfiguration:
-          create: false
+          create: true
           nodeSelector:
             node-role.opencontrail.org: "vrouter"  
         serviceConfiguration:
+          distribution: ubuntu
           nodeManager: false
           cassandraInstance: cassandra1
           controlInstance: control1
           images:
             vrouteragent: hub.juniper.net/contrail-nightly/contrail-vrouter-agent:1908.47
             vrouterkernelinit: hub.juniper.net/contrail-nightly/contrail-vrouter-kernel-init:1908.47
+            vrouterkernelbuildinit: hub.juniper.net/contrail-nightly/contrail-vrouter-kernel-build-init:1908.47
             vroutercni: michaelhenkel/contrailcni:v0.0.1
             nodemanager: hub.juniper.net/contrail-nightly/contrail-nodemgr:1908.47
             nodeinit: hub.juniper.net/contrail-nightly/contrail-node-init:1908.47
