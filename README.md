@@ -62,6 +62,8 @@ EOF
 ## Watch pod creation
 ```
 watch kubectl get pods -owide
+NAME    READY   STATUS    RESTARTS   AGE   IP              NODE   NOMINATED NODE   READINESS GATES
+busy1   1/1     Running   0          17s   10.79.255.251   k3s1   <none>           <none>
 ```
 ## Access Webui
 ```
