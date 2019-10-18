@@ -1,4 +1,7 @@
-# Install multiplass k3s
+# Requirement
+Multipass (brew install multipass) must be installed
+
+# Install Multipass k3s
 ```
 bash <(curl -sfL https://raw.githubusercontent.com/michaelhenkel/contrail-k3s/master/k3s-multipass.sh)
 ```
