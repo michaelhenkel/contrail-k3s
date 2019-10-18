@@ -63,4 +63,10 @@ EOF
 ```
 watch kubectl get pods -owide
 ```
+## Access Webui
+```
+echo "https://$(multipass info k3s1 |grep IPv4 |awk '{print $2}'):8143"
+https://192.168.64.73:8143
+```
+Copy the URL into your browser, username is admin, password is contrail123
 
