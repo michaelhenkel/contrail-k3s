@@ -6,6 +6,10 @@ Multipass (brew install multipass) must be installed
 ```
 bash <(curl -sfL https://raw.githubusercontent.com/michaelhenkel/contrail-k3s/master/k3s-multipass.sh)
 ```
+## Set kubeconfig environment
+```
+export KUBECONFIG=$KUBECONFIG:$HOME/.kube/k3s-config
+```
 ## Install Operator
 ```
 kubectl apply -f \
